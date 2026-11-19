@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reymil Jhon P. Sayson — Frontend Developer & Data Analyst</title>
+    <meta
+      name="description"
+      content="Reymil Jhon P. Sayson — Frontend Developer, Data Analyst, and System Analyst based in Negros Oriental, Philippines."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230a0a0a'/><text x='50' y='72' font-family='Inter,Helvetica,sans-serif' font-size='60' font-weight='700' fill='%23f4f1ec' text-anchor='middle'>R</text></svg>"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ==================== NAV ==================== -->
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a href="#top" class="nav__brand"
+          >Reymil Jhon<span class="dot">.</span></a
+        >
+
+        <!-- Mobile Hamburger -->
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Toggle menu</span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+
+        <ul class="nav__menu" id="nav-menu">
+          <!-- THEME TOGGLE -->
+          <li class="nav__theme-item">
+            <button
+              id="theme-toggle"
+              class="theme-toggle"
+              aria-label="Toggle theme"
+            >
+              <span class="toggle-track">
+                <span class="toggle-thumb">
+                  <svg
+                    class="icon-sun"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    height="12"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                  <svg
+                    class="icon-moon"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    height="12"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    ></path>
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </li>
+
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="nav__cta">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- ==================== HERO ==================== -->
+      <section class="hero container">
+        <div class="hero__grid">
+          <div class="hero__text">
+            <p class="eyebrow glass-panel">
+              <span class="status-dot" aria-hidden="true"></span>
+              Available for work
+            </p>
+
+            <h1 class="hero__title">
+              Reymil Jhon<br />
+              P. Sayson<span class="dot">.</span>
+            </h1>
+
+            <p class="hero__roles">
+              Frontend Developer · Data Analyst · System Analyst
+            </p>
+
+            <p class="hero__intro">
+              I build clean, fast interfaces and turn messy data into decisions.
+              Based in Negros Oriental, Philippines — open to remote and on-site
+              work.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">View Projects</a>
+              <a href="#contact" class="btn btn--ghost">Get in touch</a>
+            </div>
+          </div>
+
+          <div class="hero__photo-wrap glass-panel">
+            <img
+              src="img/Profile.png"
+              alt="Portrait of Reymil Jhon P. Sayson"
+              class="hero__photo"
+              width="800"
+              height="1000"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== ABOUT ==================== -->
+      <section class="section container" id="about">
+        <p class="section__label">01 — About</p>
+        <div class="about">
+          <div class="about__text glass-panel">
+            <h2>About me</h2>
+            <p>
+              I enjoy the part of the job where a messy problem becomes a clean,
+              working thing whether that's a responsive interface, a query that
+              returns the right answer, or a system diagram that makes everyone
+              nod.
+            </p>
+            <p>
+              I'm currently sharpening my frontend skills and studying how data
+              moves through real systems. I'm open to entry-level roles,
+              freelance projects, and internships where I can learn fast and
+              ship real work.
+            </p>
+          </div>
+
+          <aside class="about__meta glass-panel">
+            <div>
+              <span>Location</span>
+              <strong>Negros Oriental, PH</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Frontend · Data · Systems</strong>
+            </div>
+            <div>
+              <span>Currently</span>
+              <strong>Building my portfolio</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ==================== SKILLS ==================== -->
+      <section class="section container" id="skills">
+        <p class="section__label">02 — Skills</p>
+        <h2>What I work with</h2>
+
+        <div class="skills">
+          <article class="skill-group glass-panel">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+              <li>Git</li>
+            </ul>
+          </article>
+
+          <article class="skill-group glass-panel">
+            <h3>Data</h3>
+            <ul>
+              <li>SQL</li>
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Excel</li>
+              <li>Visualization</li>
+            </ul>
+          </article>
+
+          <article class="skill-group glass-panel">
+            <h3>Systems</h3>
+            <ul>
+              <li>Requirements Analysis</li>
+              <li>ERD</li>
+              <li>UML</li>
+              <li>Figma</li>
+              <li>Documentation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================== PROJECTS ==================== -->
+      <section class="section container" id="projects">
+        <p class="section__label">03 — Projects</p>
+        <h2>Selected work</h2>
+
+        <div class="projects">
+          <article class="project glass-panel">
+            <div class="project__head">
+              <h3 class="project__title">Personal Portfolio</h3>
+              <span class="project__year">2026</span>
+            </div>
+            <p class="project__desc">
+              This site. Hand-coded with HTML, CSS, and vanilla JavaScript — no
+              frameworks, no build step, no dependencies.
+            </p>
+            <div class="project__stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project__links">
+              <a href="#" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project glass-panel">
+            <div class="project__head">
+              <h3 class="project__title">Student Records System</h3>
+              <span class="project__year">2025</span>
+            </div>
+            <p class="project__desc">
+              A CRUD web application for managing student records with search,
+              filtering, and CSV export. Built as a coursework project.
+            </p>
+            <div class="project__stack">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+            </div>
+            <div class="project__links">
+              <a href="#" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project glass-panel">
+            <div class="project__head">
+              <h3 class="project__title">Sales Data Dashboard</h3>
+              <span class="project__year">2025</span>
+            </div>
+            <p class="project__desc">
+              An interactive dashboard that visualizes monthly sales data with
+              filters and charts. Built to practice data cleaning and plotting.
+            </p>
+            <div class="project__stack">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Plotly</span>
+            </div>
+            <div class="project__links">
+              <a href="#" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project glass-panel">
+            <div class="project__head">
+              <h3 class="project__title">Inventory Management Prototype</h3>
+              <span class="project__year">2024</span>
+            </div>
+            <p class="project__desc">
+              A system analysis project that mapped business requirements into a
+              working inventory app prototype and documentation.
+            </p>
+            <div class="project__stack">
+              <span>Figma</span>
+              <span>SQL</span>
+              <span>Draw.io</span>
+            </div>
+            <div class="project__links">
+              <a href="#" target="_blank" rel="noopener">Case study →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT ==================== -->
+      <section class="section contact container" id="contact">
+        <p class="section__label">04 — Contact</p>
+        <h2>Let's build<br />something<span class="dot">.</span></h2>
+
+        <p class="contact__intro">
+          Got a project, a role, or just a question? Email is the fastest way to
+          reach me. I usually reply within a day.
+        </p>
+
+        <div class="contact__links glass-panel">
+          <a class="contact__link" href="">
+            <span class="contact__link-label">Email</span>
+            <span class="contact__link-value">reymiljhonsayson@gmail.com</span>
+          </a>
+          <a
+            class="contact__link"
+            href="https://github.com/reymiljhonsayson"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact__link-label">GitHub</span>
+            <span class="contact__link-value">@It'sReymil</span>
+          </a>
+          <a
+            class="contact__link"
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact__link-label">LinkedIn</span>
+            <span class="contact__link-value">in/It'sReymil</span>
+          </a>
+          <a
+            class="contact__link"
+            href="https://www.facebook.com/reymil.sayson"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="contact__link-label">Facebook</span>
+            <span class="contact__link-value">Reymil Jhon Sayson</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>
+        © 2026 Reymil Jhon P. Sayson — built with HTML, CSS, and a bit of JS.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
